@@ -9,6 +9,20 @@
     tailwind.config = {
       theme: {
         extend: {
+          colors: {
+            olive: {
+              50: '#f9faf5',
+              100: '#f1f3ea',
+              200: '#e3e6d4',
+              300: '#cdd1b3',
+              400: '#aeb78e',
+              500: '#8c9867',
+              600: '#6c784b',
+              700: '#555e3c',
+              800: '#444c31',
+              900: '#393f29'
+            }
+          },
           fontFamily: {
             script: ['"Great Vibes"', 'cursive']
           }
@@ -18,9 +32,9 @@
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
-<body class="bg-rose-50 text-gray-800 font-sans">
+<body class="bg-olive-50 text-olive-900 font-sans">
   <div class="max-w-3xl mx-auto px-4 py-10 text-center">
-    <h1 class="text-5xl font-script text-rose-600">Лиза & Саша</h1>
+    <h1 class="text-5xl font-script text-olive-700">Лиза & Саша</h1>
     <p class="text-xl mt-4">Приглашаем вас отпраздновать наш особенный день</p>
 
     <div class="mt-10">
@@ -50,16 +64,18 @@
 
     <div class="mt-10">
       <h2 class="text-2xl font-semibold">⏳ До свадьбы осталось:</h2>
-      <p id="countdown" class="mt-4 text-xl font-mono text-rose-700"></p>
+      <p id="countdown" class="mt-4 text-xl font-mono text-olive-700"></p>
     </div>
 
     <div class="mt-10">
-      <a href="mailto:example@email.com?subject=RSVP%20на%20свадьбу" class="inline-block bg-rose-600 text-white text-lg px-6 py-3 rounded-full shadow hover:bg-rose-700 transition">
-        Подтвердить участие
+      <a href="https://t.me/+Ujo6v5qvWvcxMTFi"
+         class="inline-block bg-olive-600 text-white text-lg px-6 py-3 rounded-full shadow hover:bg-olive-700 transition"
+         target="_blank">
+        Присоединиться к Telegram-группе
       </a>
     </div>
 
-    <footer class="mt-16 text-sm text-gray-500">
+    <footer class="mt-16 text-sm text-olive-500">
       С любовью, Лиза и Саша ❤️
     </footer>
   </div>
