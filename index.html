@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Приглашение на свадьбу</title>
+  <title>Свадьба Лизы и Саши</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    // Tailwind конфигурация (по желанию)
     tailwind.config = {
       theme: {
         extend: {
@@ -19,46 +18,55 @@
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
-<body class="bg-pink-50 text-gray-800 font-sans">
+<body class="bg-rose-50 text-gray-800 font-sans">
   <div class="max-w-3xl mx-auto px-4 py-10 text-center">
-    <h1 class="text-5xl font-script text-pink-600">Аня & Илья</h1>
-    <p class="text-xl mt-4">Мы приглашаем вас на наш самый счастливый день</p>
-    
+    <h1 class="text-5xl font-script text-rose-600">Лиза & Саша</h1>
+    <p class="text-xl mt-4">Приглашаем вас отпраздновать наш особенный день</p>
+
     <div class="mt-10">
-      <h2 class="text-2xl font-semibold">🗓 12 июля 2025 года</h2>
-      <p class="mt-2 text-lg">Начало церемонии в 16:00</p>
+      <h2 class="text-2xl font-semibold">🗓 13 июля 2025 года</h2>
+      <p class="mt-2 text-lg">Начало церемонии в 10:45</p>
     </div>
 
-    <div class="mt-8">
-      <h2 class="text-2xl font-semibold">📍 Место проведения</h2>
-      <p class="mt-2 text-lg">Загородный клуб «Ромашкино», Московская область</p>
+    <div class="mt-10">
+      <h2 class="text-2xl font-semibold">📍 Место регистрации</h2>
+      <p class="mt-2 text-lg">ЗАГС №1 Санкт-Петербурга<br>Английская наб., 28</p>
       <div class="mt-4">
         <iframe class="w-full h-64 rounded-xl shadow-md"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.821622281308!2d37.620393!3d55.75396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a149f14df%3A0x5e9d497c4f7cfd33!2z0JzQvtGB0LrQstCw0YDQvtCz0L4g0KDQtdGB0L_RgNC-0LrQuNC5!5e0!3m2!1sru!2sru!4v1689999999999"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.999779474156!2d30.296503716118582!3d59.93570606786616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963176d938badd%3A0x1e9b26ac9ed9b5c0!2z0JfQsNCz0L7QtNC-0YDQsNGC0LXRgiDQnNCw0YHRgdC40Y8g0JzQvtC00L3QsNGPINGD0LsuLCDQodC10YDQtdC80LAg0JzQvtC00L3QsNGPINGD0Lsu!5e0!3m2!1sru!2sru!4v1689999999999"
           allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
     </div>
 
     <div class="mt-10">
-      <h2 class="text-2xl font-semibold">⏳ До свадьбы осталось:</h2>
-      <p id="countdown" class="mt-4 text-xl font-mono text-pink-700"></p>
+      <h2 class="text-2xl font-semibold">🕒 Расписание дня</h2>
+      <ul class="mt-4 space-y-2 text-left max-w-md mx-auto text-lg">
+        <li>🔔 <strong>10:45</strong> — Церемония регистрации</li>
+        <li>📸 <strong>11:30 – 13:00</strong> — Прогулка и фотосессия</li>
+        <li>🍽 <strong>13:00</strong> — Банкет и веселье!</li>
+      </ul>
     </div>
 
     <div class="mt-10">
-      <a href="mailto:example@email.com?subject=RSVP" class="inline-block bg-pink-600 text-white text-lg px-6 py-3 rounded-full shadow hover:bg-pink-700 transition">
+      <h2 class="text-2xl font-semibold">⏳ До свадьбы осталось:</h2>
+      <p id="countdown" class="mt-4 text-xl font-mono text-rose-700"></p>
+    </div>
+
+    <div class="mt-10">
+      <a href="mailto:example@email.com?subject=RSVP%20на%20свадьбу" class="inline-block bg-rose-600 text-white text-lg px-6 py-3 rounded-full shadow hover:bg-rose-700 transition">
         Подтвердить участие
       </a>
     </div>
 
     <footer class="mt-16 text-sm text-gray-500">
-      С любовью, Аня и Илья ❤️
+      С любовью, Лиза и Саша ❤️
     </footer>
   </div>
 
   <script>
     const countdownEl = document.getElementById('countdown');
-    const weddingDate = new Date('2025-07-12T16:00:00');
+    const weddingDate = new Date('2025-07-13T10:45:00');
 
     function updateCountdown() {
       const now = new Date();
